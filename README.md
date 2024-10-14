@@ -1,6 +1,6 @@
 <div align="center">
   
-<img src="https://cdn.discordapp.com/attachments/1065809341103493135/1294019463703826513/Logo_tikee_sin_fondo.png?ex=67097d09&is=67082b89&hm=e37161fab6bff5b72fbc6bd5882d9df1fe5779d4c44a604e0e7a13dcfd0d3d0d&" alt="Temas a practicar" width="100"/>
+<img src="https://cdn.discordapp.com/attachments/1065809341103493135/1294019463703826513/Logo_tikee_sin_fondo.png?ex=670e1a49&is=670cc8c9&hm=ab7a45b0155cb44163af2a076fdb3ce32bacd5f04ab800217019cdb05bf968c9&" alt="Temas a practicar" width="100"/>
 
 # Reto: Predicción de Gastos para Billeteras de Aplicaciones Financieras 💻
 
