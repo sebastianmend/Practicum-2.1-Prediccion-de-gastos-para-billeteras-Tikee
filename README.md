@@ -68,5 +68,41 @@ Dado el contexto de predicción de pagos recurrentes para billeteras financieras
 - **Menor intervención manual**: Es más resistente a variaciones en los datos, lo que reduce la necesidad de monitoreo constante.
 
 ## Resumen
+
+- Si los pagos recurrentes siguen un patrón bastante regular (con poca fluctuación o cambios importantes en los hábitos de consumo de los usuarios), ARIMA o Prophet serían las opciones más recomendadas:
+ARIMA es mejor si tus datos son estacionarios y el comportamiento es lineal.
+Prophet sería útil si hay estacionalidad clara y eventos especiales que afectan a los pagos (por ejemplo, más pagos a fin de mes o durante feriados).
+- Si los patrones de consumo y pagos cambian con el tiempo y dependen de múltiples factores (como geolocalización, día de la semana, etc.), entonces LSTM es la opción más robusta:
+LSTM es ideal cuando los datos son no lineales y los pagos dependen de muchos factores que cambian a lo largo del tiempo.
+
 Si se dispone de los recursos para realizar ajustes y retroalimentaciones continuas, **LSTM** es más potente para capturar patrones complejos. Si se busca algo más sencillo de mantener, **Prophet** es más adecuado.
+
+
+## Preguntas para la reunión con la empresa:
+
+Sobre los requisitos del proyecto:
+
+- **Clarificación del objetivo principal:** ¿Qué objetivos clave tiene la empresa con la predicción de gastos en billeteras digitales? ¿Buscan reducir costos, mejorar la experiencia del usuario o incrementar las transacciones?
+ 
+- **Patrones de consumo:** ¿Existen patrones de consumo previamente usados? ¿Tienen ejemplos de patrones específicos que esperan que detectemos?
+
+- **Uso de geolocalización:** ¿Cómo esperan que la geolocalización influya en las predicciones? ¿Tienen casos de uso sobre cómo la ubicación debería afectar los pagos recurrentes o sugeridos?
+
+- **Disponibilidad de datos:** 
+
+¿Qué tipos de datos de usuario estarán disponibles (transacciones, ubicaciones, hábitos de uso)? 
+
+*Nos ineresa mucho*
+
+- **Interacción con otros sistemas:** ¿La billetera digital está integrada con otros sistemas o plataformas (como bancos o servicios externos) que debamos tener en cuenta? Si es así, ¿cómo será la integración?
+
+- **Notificaciones:** ¿Tienen una expectativa de cuántas notificaciones deberían enviarse para que el usuario no se sienta abrumado? ¿Prefieren notificaciones basadas en tiempo o en eventos específicos?
+
+- **Limitaciones actuales:** ¿Cuáles son las principales limitaciones o desafíos que enfrentan actualmente en cuanto a la predicción de pagos? ¿Qué esperan que resolvamos con la solución propuesta?
+
+- **Criterios de éxito:** ¿Cómo medirán el éxito del proyecto? ¿Cuáles son los KPIs más relevantes (por ejemplo, aumento en pagos automáticos, reducción de fricción en el uso de la aplicación)?
+
+- **Recursos disponibles:** ¿Qué herramientas, bibliotecas o tecnologías ya utilizan o recomiendan que usemos para el desarrollo del proyecto (por ejemplo, algún sistema de mensajería en tiempo real, APIs de geolocalización)?
+
+- **Herramientas y plataformas preferidas:** ¿La empresa tiene alguna preferencia en cuanto a las tecnologías que deberíamos usar para el desarrollo del prototipo? (por ejemplo, lenguajes, frameworks, sistemas de bases de datos, etc.)
 
